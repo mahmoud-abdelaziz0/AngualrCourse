@@ -1,5 +1,6 @@
 <h1 class="alert alert-dark w-25 mx-auto my-3 text-center">Students</h1>
 
+<!-- <button (click)="fun()">Show</button> -->
 
 <table class="table table-bordered border-dark table-striped  text-center w-50 mx-auto">
   <thead>
@@ -9,7 +10,7 @@
     </tr>
   </thead>
   <tbody>
-    @for (std of StudentDataFromParent; track $index){
+    @for (std of studentsArrData; track $index){
       <tr>
         <td>{{std.name}}</td>
         <td>{{std.age}}</td>

@@ -1,0 +1,67 @@
+<!-- <div style="background-color: black; color: crimson; text-align: center">
+  <h1>Hello from first component 👋🏻</h1>
+  <app-second></app-second>
+</div> -->
+
+<!-- <h1 style="color: yellow;">Hello from first component 👋🏻</h1> -->
+
+<!-- <h2>3+3</h2>
+<h2>{{3+3}}</h2> -->
+<!-- {{}}  👉🏻 Interpolation ➡️ get data from TS to Html-->
+
+<!-- Angular Binding -->
+<!-- 1️⃣ One-Way Binding
+        🌟 Interpolation {{}} 👉🏻 from ts to html
+        🌟 Property [] 👉🏻 from ts to html
+        🌟 Attribute Binding [attr.attributeName] ==> self study  👉🏻 from ts to html
+        🌟 Event-Binding  ()  👉🏻 from html to Ts
+    2️⃣ Two-Way Binding
+        🌟 by us
+        🌟 by angular
+ -->
+
+<h2>hello ya {{name}}</h2>
+<input type="text" value="{{name}}"> <br><br>
+<input type="text" value="name"> <br><br>
+<!-- <input [type]="typeInput" [value]="name"> -->
+<input type="text" [value]="name"> <br><br>
+
+<input type="button" value="changeName" (click)="chgName($event)">
+
+<br><br><hr>
+
+<img width="150" src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=" alt="">
+
+<!-- <img src="../../../../public/images/img1.jpg" alt=""> ❌❌❌-->
+<!-- <img src="public/images/img1.jpg" alt=""> ❌❌❌ -->
+<img width="150" src="images/img1.jpg" alt="">
+<!-- <img width="150" src="{{imgSrc}}" alt="" (mouseover)="chgSrc()"> -->
+
+<img width="150" [src]="imgSrc" alt="" (mouseover)="chgSrc()" (mouseout)="backSrc()">
+<!-- <img width="150" src="images/img3.jpg" (mouseover)="chgImg($event.target.src)" alt=""> -->
+
+<!-- <table border="1">
+  <tr>
+    <td>cl1</td>
+    <td>cl2</td>
+    <td>cl2</td>
+  </tr>
+  <tr>
+    <td [attr.colspan]="colNum">cl3</td>
+  </tr>
+</table> -->
+
+<br><br><hr>
+
+<!-- <input type="text" placeholder="enter txet">
+<h3>Text: </h3> -->
+
+<!-- <input type="text" placeholder="enter txet" (input)="getData(this)"> -->
+<!-- <input type="text" placeholder="enter txet" (input)="getData($event.target.value)">
+<h3>Text: {{textInput}}</h3> -->
+
+<input type="text" placeholder="enter txet" [(ngModel)]="textInput" >
+<h3>Text: {{textInput}}</h3>
+
+
+

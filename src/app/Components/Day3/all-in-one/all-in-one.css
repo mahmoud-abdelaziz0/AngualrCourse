@@ -1,0 +1,78 @@
+h1 {
+  background-color: black;
+  text-align: center;
+  width: 30%;
+  margin: 15px auto;
+  padding: 8px;
+  border-radius: 8px;
+}
+.reg {
+  color: crimson;
+}
+.std {
+   color: coral;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 5px auto;
+  border: 2px solid crimson;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.form input{
+  width: 80%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid #aaa;
+  outline: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.valid p{
+  margin: 0px 25px 5px;
+  font-size: 13px;
+  color: crimson;
+}
+
+.form input[type="button"] {
+  width: 15%;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.form input[type="button"]:active {
+  background-color: dodgerblue;
+  width: 20%;
+}
+
+table {
+  background-color: #F1F1F1;
+  width: 60%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center ;
+  color: black;
+}
+
+tr,td, th {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+tr th {
+  color:  coral;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}

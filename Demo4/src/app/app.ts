@@ -9,6 +9,7 @@ import { Login } from "./Components/Day3/Components Interaction/login/login";
 import { Registeration } from "./Components/Day4/ComponentsInteractions/registeration/registeration";
 import { Students } from "./Components/Day4/ComponentsInteractions/students/students";
 import { StdData } from './Interfaces/student';
+import { TestLifeCycle } from "./Components/Day4/test-life-cycle/test-life-cycle";
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,8 @@ import { StdData } from './Interfaces/student';
     Home,
     Login,
     Registeration,
-    Students
+    Students,
+    TestLifeCycle
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -46,13 +48,24 @@ export class App {
   }
 
   // StudentsArr:{name:string, age:string}[] = []
-  StudentsArr:StdData[] = []
+  // StudentsArr:StdData[] = []
+  oneStudent:any
 
   getRegData(regData:any){
     console.log(regData)
 
-    this.StudentsArr.push(regData)
-    console.log(this.StudentsArr)
+    // this.StudentsArr.push(regData)
+    // console.log(this.StudentsArr)
+
+    this.oneStudent = regData
   }
+
+  isShow:boolean = true
+
+  toggleBtn(){
+    this.isShow = !this.isShow
+  }
+
+  parentData = 'hello form parent'
 
 }

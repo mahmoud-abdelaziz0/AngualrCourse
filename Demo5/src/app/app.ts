@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { First } from './Components/First/first';
 import { Second } from "./Components/second/second";
 import { DispayInfo } from './Components/dispay-info/dispay-info';
@@ -11,6 +11,7 @@ import { Students } from "./Components/Day4/ComponentsInteractions/students/stud
 import { StdData } from './Interfaces/student';
 import { TestLifeCycle } from "./Components/Day4/test-life-cycle/test-life-cycle";
 import { Validation } from "./Components/Day5/validation/validation";
+import { Navbar } from "./Components/Day5/TestRouting/navbar/navbar";
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,9 @@ import { Validation } from "./Components/Day5/validation/validation";
     Registeration,
     Students,
     TestLifeCycle,
-    Validation
+    Validation,
+    RouterModule,
+    Navbar
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'

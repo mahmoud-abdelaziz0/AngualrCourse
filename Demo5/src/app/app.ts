@@ -10,6 +10,7 @@ import { Registeration } from "./Components/Day4/ComponentsInteractions/register
 import { Students } from "./Components/Day4/ComponentsInteractions/students/students";
 import { StdData } from './Interfaces/student';
 import { TestLifeCycle } from "./Components/Day4/test-life-cycle/test-life-cycle";
+import { Validation } from "./Components/Day5/validation/validation";
 
 @Component({
   selector: 'app-root',
@@ -28,7 +29,8 @@ import { TestLifeCycle } from "./Components/Day4/test-life-cycle/test-life-cycle
     Login,
     Registeration,
     Students,
-    TestLifeCycle
+    TestLifeCycle,
+    Validation
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'

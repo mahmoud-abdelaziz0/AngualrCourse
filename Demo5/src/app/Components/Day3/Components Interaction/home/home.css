@@ -1,0 +1,7 @@
+div {
+  border: 2px solid cornflowerblue;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+}

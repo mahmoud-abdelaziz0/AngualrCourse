@@ -1,0 +1,23 @@
+<h1>Display Info</h1>
+
+<div class="form">
+  <input type="text" placeholder="Name" [(ngModel)]="name">
+  <input type="text" placeholder="Age" [(ngModel)]="age">
+  <span>Gender</span>
+  <select id="" [(ngModel)]="gender">
+    <option value="male" >Male</option>
+    <option value="female">feMale</option>
+  </select>
+  <input type="email" name="" placeholder="Email" [(ngModel)]="email">
+  <input type="text" placeholder="country" [(ngModel)]="country">
+  <input type="button" value="display" (click)="displayData()">
+</div>
+
+<div class="info">
+  <!-- <img width="100" [src]="allInfoData.gender === 'male'? '/images/male.svg':'/images/fmale.svg'" alt=""> -->
+  <img width="100" src="{{allInfoData.gender === 'male'? '/images/male.svg':'/images/fmale.svg'}}" alt="">
+  <p>hello ya: {{allInfoData.userName}}</p>
+  <p>your age is: {{allInfoData.userAge}}</p>
+  <p>email: {{allInfoData.email}}</p>
+  <p>country: {{allInfoData.country}}</p>
+</div>

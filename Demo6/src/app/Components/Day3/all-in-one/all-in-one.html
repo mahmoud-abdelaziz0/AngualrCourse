@@ -1,0 +1,94 @@
+<div class="form">
+  <input type="text" placeholder="Enter Name" [(ngModel)] = 'name'>
+  <input type="number" placeholder="Enter Age" [(ngModel)]="age">
+  <!-- <div *ngIf="age > 25 || age < 0 || age == 0">
+    <p style="color: red; margin: 2px 70px;">age not valid</p>
+  </div>
+
+  <div *ngIf="age <= 25 && age > 0">
+    <p style="color: green; margin: 2px 70px;">age valid</p>
+  </div> -->
+
+  <!-- <div *ngIf="age > 25 || age < 0 || age == 0; else esleBlock">
+    <p style="color: red; margin: 2px 70px;">age not valid</p>
+  </div>
+
+  <ng-template #esleBlock>
+    <div *ngIf="age">
+      <p style="color: green; margin: 2px 70px;">age valid</p>
+    </div>
+  </ng-template> -->
+
+
+  <!-- <div *ngIf="age > 25 || age < 0 || age == 0;then trueBlock ;else esleBlock"></div>
+
+  <ng-template #trueBlock>
+    <div>
+      <p style="color: red; margin: 2px 70px;">age not valid</p>
+    </div>
+  </ng-template>
+
+  <ng-template #esleBlock>
+    <div *ngIf="age">
+      <p style="color: green; margin: 2px 70px;">age valid</p>
+    </div>
+  </ng-template> -->
+
+
+  @if(age > 25 || age < 0 || age == 0){
+    <p style="color: red; margin: 2px 70px;">age not valid</p>
+  }@else{
+    <!-- @if (age) { -->
+      <p style="color: green; margin: 2px 70px;">age valid</p>
+    <!-- } -->
+  }
+
+
+  <!--  Handel else Case
+        - Directives
+            - another *ngif conditions
+        - Control flow
+
+  -->
+
+
+
+  <input type="button" value="Add" (click)="sendData()">
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let std of AllStudentData">
+      <td>{{std.sName}}</td>
+      <td>{{std.sAge}}</td>
+    </tr>
+
+    <!-- @for(std of AllStudentData; track std.sName){
+      <tr>
+        <td>{{std.sName}}</td>
+        @if (std.sAge <= 25) {
+          <td>{{std.sAge}}</td>
+        }
+      </tr> -->
+    <!-- } -->
+  </tbody>
+</table>
+
+
+<!-- looping conditions in angular
+    🌟 Directives
+        - Structural Directive
+            - *ngFor
+            - *ngIf
+            - *ngswitch
+    🌟 Control Flow
+            - @for
+            - @if
+
+-->

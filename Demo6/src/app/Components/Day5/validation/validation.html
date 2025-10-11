@@ -1,0 +1,36 @@
+<!-- <div class="border border-2 border-secondary w-50 mx-auto my-3 p-2 rounded-3">
+  <div class="input-group w-50 mx-auto my-2">
+    <label class="input-group-text bg-dark text-light" for="">Name</label>
+    <input class="form-control" type="text"  #inputName>
+  </div>
+  <div class="input-group w-50 mx-auto my-2">
+    <label class="input-group-text bg-dark text-light" for="">Age</label>
+    <input class="form-control" type="text"  #inputAge>
+  </div>
+  <div class="input-group my-2">
+    <input type="button" value="Add" class="btn btn-outline-danger w-25 mx-auto" (click)="getData(inputName, inputAge)">
+  </div>
+</div> -->
+
+
+<div [formGroup]="myRegFrom" class="border border-2 border-secondary w-50 mx-auto my-3 p-2 rounded-3">
+  <div class="input-group w-50 mx-auto my-2">
+    <label class="input-group-text bg-dark text-light" for="">Name</label>
+    <input class="form-control" type="text" formControlName="name">
+  </div>
+  @if (!NameValid) {
+    <p class="text-danger ms-5">Name Not Valid</p>
+  }
+  <div class="input-group w-50 mx-auto my-2">
+    <label class="input-group-text bg-dark text-light" for="">Age</label>
+    <input class="form-control" type="text" formControlName="age">
+  </div>
+  <!-- @if (!AgeValid) { -->
+  @if (!myRegFrom.controls.age.valid) {
+    <p class="text-danger ms-5">Age Not Valid</p>
+  }
+  <div class="input-group my-2">
+    <input type="button" value="Add" class="btn btn-outline-danger w-25 mx-auto" [disabled]="FormValid?false:true" (click)="getData()">
+  </div>
+</div>
+

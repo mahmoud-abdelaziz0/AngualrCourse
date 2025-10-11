@@ -1,1 +1,7 @@
-<h1 class="alert alert-warning w-50 mx-auto text-center my-5">About Component</h1>
+<!-- <h1 class="alert alert-warning w-50 mx-auto text-center my-5">About Component</h1>
+<h2>{{userName.name}}</h2>
+
+<button (click)="chgName()" class="btn btn-danger mx-5">Change Name</button> -->
+@for (user of fetchedData; track $index) {
+  <h3>{{user.name}}</h3>
+}

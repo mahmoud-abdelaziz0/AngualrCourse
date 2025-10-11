@@ -14,10 +14,10 @@ export class Cutom  implements OnInit{
   }
 
   @HostListener('click') changeStyl(){
-    this.myRef.nativeElement.style.backgroundColor = this.bgColor
-    this.myRef.nativeElement.style.color = 'white'
+    this.myRef.nativeElement.style.backgroundColor = this.colorObj.bgColor
+    this.myRef.nativeElement.style.color = this.colorObj.fgColor
   }
 
-  @Input() bgColor=''
+  @Input({alias:'appCutom', required:true}) colorObj={bgColor:'', fgColor:''}
 
 }

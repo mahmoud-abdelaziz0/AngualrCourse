@@ -62,7 +62,7 @@
 
 <!-- Day 6️⃣ -->
 
-<!-- Directives
+<!-- ☀️ Directives
       - Built-in
           * Structural Directive ===> [*ngIf, *ngFor, *ngSwitch]
           * Attribute Directive ===> [ngModel, ngStyle, ngClass]
@@ -101,9 +101,17 @@
 <h1 appCutom="dodgerblue">Hello 2</h1>
 <h1 appCutom="yellowgreen">Hello 2</h1> -->
 
-<h1 appCutom bgColor="crimson">Hello 1</h1>
+<!-- <h1 appCutom bgColor="crimson">Hello 1</h1>
 <h1 appCutom bgColor="dodgerblue">Hello 2</h1>
-<h1 appCutom bgColor="yellowgreen">Hello 2</h1>
+<h1 appCutom bgColor="yellowgreen">Hello 2</h1> -->
+
+<!-- <h1 appCutom="crimson">Hello 1</h1>Ahmed emaD
+<h1 appCutom="dodgerblue">Hello 2</h1>
+<h1 appCutom="yellowgreen">Hello 2</h1> -->
+
+<!-- <h1 [appCutom]="{bgColor:'crimson', fgColor:'dodgerblue'}">Hello 1</h1>
+<h1 [appCutom]="{bgColor:'dodgerblue', fgColor:'white'}">Hello 2</h1>
+<h1 [appCutom]="{bgColor:'yellowgreen', fgColor:'red'}">Hello 2</h1> -->
 
 <!-- <div appCutom>
   <h1>hi</h1>
@@ -114,4 +122,54 @@
 
 <input type="text" value="ahmed" appCutom> -->
 
-<!-- <app-home appCutom></app-home> -->
+<!-- <app-home [hamada]="appData"></app-home> -->
+
+<!--☀️ Pipe
+        * built-in pipe
+        * custom pipe
+-->
+
+
+<!-- <h1>{{name}}</h1>
+<h1>{{name|uppercase}}</h1>
+<h1>{{name|lowercase}}</h1>
+<h1>{{name|titlecase}}</h1>
+
+<hr>
+
+<h1>{{salary}}</h1>
+<h1>{{salary|currency}}</h1>
+<h1>{{salary|currency:'USD'}}</h1>
+<h1>{{salary|currency:'EUR'}}</h1>
+<h1>{{salary|currency:'INR'}}</h1>
+<h1>{{salary|currency:'EGP'}}</h1>
+<h2>{{salary2}}</h2>
+
+<hr>
+
+<h1>{{date}}</h1>
+<h1>{{date|date}}</h1>
+<h1>{{date2|date}}</h1>
+<h1>{{date3|date}}</h1>
+
+<br><hr> -->
+
+<!-- <h1>{{name}}</h1>
+<h1>{{name| uppercase}}</h1> -->
+<!-- <h1>{{name|speratedChar}}</h1> -->
+<!-- <h1>{{name|speratedChar:'**'}}</h1>
+<h1>{{name|speratedChar:'$'}}</h1>
+<h1>{{name|speratedChar:'^^'}}</h1>
+<h1>{{name|speratedChar}}</h1> -->
+
+<!-- <h1>{{'Mahmoud'|speratedChar}}</h1> -->
+
+
+<!-- Signals -->
+
+<!-- <app-test-signals></app-test-signals> -->
+
+
+<app-test-service></app-test-service>
+<br><hr>
+<app-about></app-about>

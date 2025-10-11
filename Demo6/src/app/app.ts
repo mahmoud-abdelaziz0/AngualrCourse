@@ -15,6 +15,10 @@ import { Navbar } from "./Components/Day5/TestRouting/navbar/navbar";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from '@angular/common';
 import { Cutom } from "./Directives/cutom";
+import { CustomPipe } from './Pipes/custom-pipe';
+import { TestSignals } from "./Components/Day6/test-signals/test-signals";
+import { TestService } from "./Components/Day6/test-service/test-service";
+import { About } from "./Components/Day5/TestRouting/about/about";
 
 @Component({
   selector: 'app-root',
@@ -39,12 +43,18 @@ import { Cutom } from "./Directives/cutom";
     Navbar,
     FormsModule,
     CommonModule,
-    Cutom
+    Cutom,
+    CustomPipe,
+    TestSignals,
+    TestService,
+    About
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
+
   // // parentData = 'Data From Parent'
   // reciveLoginData = ''
 
@@ -81,21 +91,33 @@ export class App {
 
   // day 6
 
-  name = ''
-  sname = ''
-  tname = ''
+  // name = ''
+  // sname = ''
+  // tname = ''
 
-  inputStyle1 = {
-    'border':'2px solid crimson',
-    'background-color':'yellow',
-    'outline': 'none'
-  }
+  // inputStyle1 = {
+  //   'border':'2px solid crimson',
+  //   'background-color':'yellow',
+  //   'outline': 'none'
+  // }
 
-  inputStyle2 = {
-    'border':'2px solid green',
-    'background-color':'dodgerblue',
-    'color': 'white',
-    'outline': 'none'
-  }
+  // inputStyle2 = {
+  //   'border':'2px solid green',
+  //   'background-color':'dodgerblue',
+  //   'color': 'white',
+  //   'outline': 'none'
+  // }
+
+
+  // appData = 'hello from parent'
+
+  name = 'omar emad'
+
+  salary = '1200'
+  salary2 = '$1,200.00'
+
+  date = "11-10-2025"
+  date2 = "10-11-2025"
+  date3 = "2025-10-11"
 
 }

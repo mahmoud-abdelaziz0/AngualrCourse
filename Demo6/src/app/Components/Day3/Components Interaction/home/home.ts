@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class Home {
 
-  @Input() dataFromParent = ''
+  // @Input() dataFromParent = ''
+
+  // @Input({alias:'hamada', required:true, transform:(value:string)=> value.toUpperCase()}) parentData = ''
+  // @Input({alias:'hamada', required:true, transform:(value:string)=> value.split("").join("*")}) parentData = ''
 
 }

@@ -12,6 +12,9 @@ import { StdData } from './Interfaces/student';
 import { TestLifeCycle } from "./Components/Day4/test-life-cycle/test-life-cycle";
 import { Validation } from "./Components/Day5/validation/validation";
 import { Navbar } from "./Components/Day5/TestRouting/navbar/navbar";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from '@angular/common';
+import { Cutom } from "./Directives/cutom";
 
 @Component({
   selector: 'app-root',
@@ -33,44 +36,66 @@ import { Navbar } from "./Components/Day5/TestRouting/navbar/navbar";
     TestLifeCycle,
     Validation,
     RouterModule,
-    Navbar
+    Navbar,
+    FormsModule,
+    CommonModule,
+    Cutom
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  // parentData = 'Data From Parent'
-  reciveLoginData = ''
+  // // parentData = 'Data From Parent'
+  // reciveLoginData = ''
 
-  // getData(ev:any){
-  //   console.log(ev)
-  //   // console.log(ev.target.value)
+  // // getData(ev:any){
+  // //   console.log(ev)
+  // //   // console.log(ev.target.value)
+  // // }
+
+  // getLoginData(data:any){
+  //   console.log(data)
+  //   this.reciveLoginData = data
   // }
 
-  getLoginData(data:any){
-    console.log(data)
-    this.reciveLoginData = data
+  // // StudentsArr:{name:string, age:string}[] = []
+  // // StudentsArr:StdData[] = []
+  // oneStudent:any
+
+  // getRegData(regData:any){
+  //   console.log(regData)
+
+  //   // this.StudentsArr.push(regData)
+  //   // console.log(this.StudentsArr)
+
+  //   this.oneStudent = regData
+  // }
+
+  // isShow:boolean = true
+
+  // toggleBtn(){
+  //   this.isShow = !this.isShow
+  // }
+
+  // parentData = 'hello form parent'
+
+  // day 6
+
+  name = ''
+  sname = ''
+  tname = ''
+
+  inputStyle1 = {
+    'border':'2px solid crimson',
+    'background-color':'yellow',
+    'outline': 'none'
   }
 
-  // StudentsArr:{name:string, age:string}[] = []
-  // StudentsArr:StdData[] = []
-  oneStudent:any
-
-  getRegData(regData:any){
-    console.log(regData)
-
-    // this.StudentsArr.push(regData)
-    // console.log(this.StudentsArr)
-
-    this.oneStudent = regData
+  inputStyle2 = {
+    'border':'2px solid green',
+    'background-color':'dodgerblue',
+    'color': 'white',
+    'outline': 'none'
   }
-
-  isShow:boolean = true
-
-  toggleBtn(){
-    this.isShow = !this.isShow
-  }
-
-  parentData = 'hello form parent'
 
 }

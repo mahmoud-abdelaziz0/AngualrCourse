@@ -56,6 +56,62 @@
 
 
 
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
+<!-- <app-navbar></app-navbar>
+<router-outlet></router-outlet> -->
 
+
+<!-- Day 6️⃣ -->
+
+<!-- Directives
+      - Built-in
+          * Structural Directive ===> [*ngIf, *ngFor, *ngSwitch]
+          * Attribute Directive ===> [ngModel, ngStyle, ngClass]
+      - Custom
+ -->
+
+
+<!-- <input type="text" style="border: 2px solid red; outline: none;" *ngIf="name.length < 3" [(ngModel)]="name">
+<input type="text" style="border: 2px solid green; outline: none;" *ngIf="name.length >= 3" [(ngModel)]="name">
+<br><hr> -->
+<!-- ================================================================ -->
+<!-- <input type="text" style="outline: none;" [ngStyle]="{'border':sname.length < 3?'2px solid red':'2px solid green'}" [(ngModel)]="sname">
+<br><br>
+<input type="text" [ngStyle]="sname.length<3? inputStyle1 :inputStyle2" [(ngModel)]="sname">
+<br><br>
+<input type="text" [style]="{'border':sname.length < 3?'2px solid red':'2px solid green', 'outline':'none'}" [(ngModel)]="sname">
+
+<br><hr> -->
+<!-- ================================================================ -->
+<!-- <input type="text" style="outline: none;" [ngClass]="tname.length < 3?'border border-danger border-2 bg-warning-subtle':'border border-success border-2 bg-primary-subtle'" [(ngModel)]="tname">
+<br>
+<input type="text" style="outline: none;" [class]="tname.length < 3?'border border-danger border-2 bg-warning-subtle':'border border-success border-2 bg-primary-subtle'" [(ngModel)]="tname">
+
+<p [style]="{'color':tname.length < 3?'red':'green'}">{{tname.length < 3?'Age not valid': 'Age valid'}}</p>
+
+@if(tname.length < 3){
+  <p>Age not valid</p>
+}@else {
+  <p >Age valid</p>
+} -->
+
+<!-- <h1 appCutom>Hello 1</h1>
+<h1 appCutom>Hello 2</h1>
+<h1 appCutom>Hello 2</h1> -->
+<!-- <h1 appCutom="crimson">Hello 1</h1>
+<h1 appCutom="dodgerblue">Hello 2</h1>
+<h1 appCutom="yellowgreen">Hello 2</h1> -->
+
+<h1 appCutom bgColor="crimson">Hello 1</h1>
+<h1 appCutom bgColor="dodgerblue">Hello 2</h1>
+<h1 appCutom bgColor="yellowgreen">Hello 2</h1>
+
+<!-- <div appCutom>
+  <h1>hi</h1>
+</div> -->
+<!-- <p appCutom>Hello 1</p>
+
+<h2 appCutom>hi</h2>
+
+<input type="text" value="ahmed" appCutom> -->
+
+<!-- <app-home appCutom></app-home> -->
